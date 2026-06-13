@@ -13,12 +13,23 @@
   --yellow-dark: #e6c200;
   --yellow-light: #fff0a0;
   --white: #ffffff;
-  --off-white: #f0f8ff;
+  --off-white: #fff8f2;
   --muted: #6b8ab0;
   --border: rgba(255,255,255,.15);
   --radius: 16px;
   --radius-sm: 10px;
   --ease: .3s cubic-bezier(.25,.46,.45,.94);
+  /* Summer palette */
+  --coral: #ff6b35;
+  --coral-light: #ff8c5a;
+  --coral-dark: #e54e1e;
+  --teal: #00a896;
+  --teal-dark: #007a70;
+  --teal-light: #00c9b1;
+  --sand: #fff8f2;
+  --peach: #fff0e8;
+  --sky: #e0f7ff;
+  --orange: #ff9b39;
 }
 
 html { scroll-behavior: smooth; }
@@ -99,6 +110,7 @@ a { text-decoration: none; color: inherit; }
   transition: all var(--ease);
 }
 .nav-center a:hover { color: var(--cyan); background: rgba(0,200,232,.1); }
+.nav-active { color: var(--cyan) !important; background: rgba(0,200,232,.12) !important; font-weight: 700 !important; }
 
 .nav-book {
   background: var(--yellow); color: var(--navy);
@@ -220,8 +232,8 @@ a { text-decoration: none; color: inherit; }
 
 /* ===== BEAR BANNER ===== */
 .bear-banner {
-  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
-  border-bottom: 3px solid var(--cyan);
+  background: linear-gradient(135deg, var(--teal) 0%, var(--cyan) 100%);
+  border-bottom: 3px solid var(--yellow);
 }
 .bear-banner-inner {
   display: flex; align-items: center; gap: 24px;
@@ -236,8 +248,10 @@ a { text-decoration: none; color: inherit; }
 
 /* ===== SECTIONS ===== */
 .section { padding: 96px 0; }
-.section-blue { background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%); }
-.section-navy { background: var(--navy-dark); }
+.section-blue { background: linear-gradient(135deg, var(--teal-dark) 0%, var(--teal) 50%, var(--cyan) 100%); }
+.section-navy { background: linear-gradient(135deg, var(--coral-dark) 0%, var(--coral) 60%, var(--orange) 100%); }
+.section-teal { background: linear-gradient(135deg, var(--teal-dark) 0%, var(--teal) 100%); }
+.section-warm { background: var(--peach); }
 
 .sec-head { text-align: center; margin-bottom: 56px; }
 .sec-head-light h2 { color: var(--white) !important; }

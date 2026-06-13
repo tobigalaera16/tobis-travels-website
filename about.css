@@ -17,12 +17,12 @@
 }
 .about-hero-bg {
   position: absolute; inset: 0;
-  background-image: url('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1600&q=80');
-  background-size: cover; background-position: center;
+  background-image: url('about-banner.png');
+  background-size: cover; background-position: center top;
 }
 .about-hero-tint {
   position: absolute; inset: 0;
-  background: linear-gradient(135deg, rgba(13,43,107,.9) 0%, rgba(0,100,150,.7) 50%, rgba(13,43,107,.85) 100%);
+  background: linear-gradient(135deg, rgba(13,43,107,.55) 0%, rgba(0,80,120,.35) 50%, rgba(13,43,107,.55) 100%);
 }
 .about-hero-content {
   position: relative; z-index: 2;

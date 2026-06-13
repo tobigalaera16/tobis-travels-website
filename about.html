@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — Tobi's Travels</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="about.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500;600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav solid" id="nav">
+    <a href="index.html" class="nav-logo">
+      <img src="logo.png" alt="Tobi's Travels Logo" class="nav-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+      <div class="nav-logo-fallback">
+        <span class="plane-icon">✈</span>
+        <div>
+          <span class="logo-text-main">Tobi's</span>
+          <span class="logo-text-sub">Travels</span>
+        </div>
+      </div>
+    </a>
+    <div class="nav-center">
+      <a href="tours.html">Domestic Tours</a>
+      <a href="index.html#destinations">Packages</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html" class="nav-active">About Us</a>
+    </div>
+    <a href="index.html#book" class="nav-book">Book a Trip →</a>
+    <button class="burger" id="burger"><i class="fas fa-bars"></i></button>
+  </nav>
+
+  <!-- MOBILE DRAWER -->
+  <div class="drawer" id="drawer">
+    <button class="drawer-close" id="drawerClose"><i class="fas fa-xmark"></i></button>
+    <div class="drawer-bear">🐻</div>
+    <a href="tours.html" class="drawer-link">Domestic Tours</a>
+    <a href="index.html#destinations" class="drawer-link">Packages</a>
+    <a href="blog.html" class="drawer-link">Blog</a>
+    <a href="about.html" class="drawer-link">About Us</a>
+    <a href="index.html#book" class="drawer-link drawer-cta">Book a Trip →</a>
+  </div>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <!-- ABOUT HERO -->
+  <section class="about-hero">
+    <div class="about-hero-bg"></div>
+    <div class="about-hero-tint"></div>
+    <div class="about-hero-content">
+      <div class="pill">🐻 Our Story</div>
+      <h1>We're Tobi's Travels.<br/><em>Here's who we are.</em></h1>
+      <p>A DOT accredited travel agency built on passion, expertise, and a love for the Philippines.</p>
+    </div>
+  </section>
+
+  <!-- COMPANY SECTION -->
+  <section class="section about-company">
+    <div class="wrap">
+      <div class="about-grid">
+        <div class="about-logo-col">
+          <div class="about-logo-wrap">
+            <img src="logo.png" alt="Tobi's Travels" class="about-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div class="about-logo-fallback">
+              <span>✈</span>
+              <div>
+                <span class="logo-text-main">Tobi's</span>
+                <span class="logo-text-sub">Travels</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-dot-badge">
+            <i class="fas fa-certificate"></i>
+            <div>
+              <strong>DOT Accredited</strong>
+              <span>Philippine Dept. of Tourism</span>
+            </div>
+          </div>
+          <div class="about-est">
+            <span class="est-year">2011</span>
+            <span class="est-label">Year Established</span>
+          </div>
+        </div>
+
+        <div class="about-text-col">
+          <span class="tag">Who We Are</span>
+          <h2>Tobi's Travel &<br/>Tour Services Inc.</h2>
+          <p class="about-lead">We are a <strong>DOT certified Philippine travel agency</strong> incorporated as <strong>Tobi's Travel & Tour Services Inc.</strong> — helping Filipinos and travelers discover the beauty of the Philippines without breaking the bank.</p>
+          <p>Our name says it all: <strong>T.O.B.I. — Travel On Budget Instantly!</strong> We believe that amazing travel experiences shouldn't cost a fortune. Since 2011, we've been crafting affordable, memorable journeys for solo travelers, couples, barkadas, families, and corporate groups.</p>
+          <p>From the pristine lagoons of Palawan to the rolling highlands of Batanes, we've been there, planned it, and helped thousands of travelers experience it — seamlessly.</p>
+
+          <div class="about-stats">
+            <div class="about-stat">
+              <span class="as-num">13+</span>
+              <span class="as-label">Years in Business</span>
+            </div>
+            <div class="about-stat">
+              <span class="as-num">5K+</span>
+              <span class="as-label">Happy Travelers</span>
+            </div>
+            <div class="about-stat">
+              <span class="as-num">100+</span>
+              <span class="as-label">PH Destinations</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIVIDER -->
+  <div class="wave-divider">
+    <svg viewBox="0 0 1200 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,40 C300,80 900,0 1200,40 L1200,80 L0,80 Z" fill="#0d2b6b"/>
+    </svg>
+  </div>
+
+  <!-- MANAGER SECTION -->
+  <section class="section section-navy about-manager">
+    <div class="wrap">
+      <div class="sec-head sec-head-light">
+        <span class="tag tag-yellow">Meet the Visionary</span>
+        <h2>The woman behind<br/><em>Tobi's Travels</em></h2>
+      </div>
+
+      <div class="manager-card">
+        <div class="manager-avatar-col">
+          <div class="manager-avatar">
+            <div class="manager-initials">CT</div>
+            <div class="manager-badge-ring"></div>
+          </div>
+          <div class="manager-title-tags">
+            <span class="mtag mtag-blue"><i class="fas fa-certificate"></i> DOT Certified Travel Manager</span>
+            <span class="mtag mtag-yellow"><i class="fas fa-drafting-compass"></i> Licensed Architect · UAP</span>
+            <span class="mtag mtag-cyan"><i class="fas fa-star"></i> Known as Ms. Lota</span>
+          </div>
+        </div>
+
+        <div class="manager-info">
+          <div class="manager-name-block">
+            <h3>Ar. Carlota Suñga-Tiburcio</h3>
+            <p class="manager-credential">UAP · DOT Certified Travel Manager</p>
+          </div>
+
+          <p class="manager-bio">
+            Meet <strong>Ar. Carlota Suñga-Tiburcio</strong> — or as everyone lovingly calls her, <strong>Ms. Lota</strong>. She is the heart, mind, and driving force behind Tobi's Travel & Tour Services Inc.
+          </p>
+          <p class="manager-bio">
+            A <strong>licensed Architect</strong> and proud member of the <strong>United Architects of the Philippines (UAP)</strong>, Ms. Lota brings a unique eye for detail, design, and experience to the world of travel. Her architectural background means she doesn't just plan trips — she <em>designs journeys</em>.
+          </p>
+          <p class="manager-bio">
+            As a <strong>DOT Certified Travel Manager</strong>, she combines professional expertise with a deep love for the Philippines. Under her leadership, Tobi's Travels has grown from a passion project into a trusted, accredited travel agency serving thousands of Filipinos every year.
+          </p>
+          <p class="manager-bio">
+            Her philosophy is simple: <strong>every traveler deserves an extraordinary experience, regardless of budget.</strong> That's the Tobi's promise — and Ms. Lota makes sure it's kept, every single trip.
+          </p>
+
+          <div class="manager-credentials">
+            <div class="mc-item">
+              <div class="mc-icon"><i class="fas fa-drafting-compass"></i></div>
+              <div>
+                <strong>Architect (UAP)</strong>
+                <span>United Architects of the Philippines — Licensed & Registered</span>
+              </div>
+            </div>
+            <div class="mc-item">
+              <div class="mc-icon"><i class="fas fa-certificate"></i></div>
+              <div>
+                <strong>DOT Certified Travel Manager</strong>
+                <span>Philippine Department of Tourism — Accredited since 2011</span>
+              </div>
+            </div>
+            <div class="mc-item">
+              <div class="mc-icon"><i class="fas fa-building"></i></div>
+              <div>
+                <strong>President & General Manager</strong>
+                <span>Tobi's Travel & Tour Services Inc.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WAVE BOTTOM -->
+  <div class="wave-divider wave-flip">
+    <svg viewBox="0 0 1200 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,40 C300,0 900,80 1200,40 L1200,0 L0,0 Z" fill="#0d2b6b"/>
+    </svg>
+  </div>
+
+  <!-- VALUES SECTION -->
+  <section class="section about-values">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="tag">What Drives Us</span>
+        <h2>Our values &amp; mission</h2>
+      </div>
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-icon">🎯</div>
+          <h3>Our Mission</h3>
+          <p>To make Philippine travel accessible, affordable, and unforgettable for every type of traveler — from the solo adventurer to the family on a budget.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">🌟</div>
+          <h3>Our Vision</h3>
+          <p>To be the most trusted and beloved Philippine travel agency — where every trip is crafted with care, expertise, and a personal touch.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">💛</div>
+          <h3>T.O.B.I. Promise</h3>
+          <p><strong>Travel On Budget Instantly!</strong> No hidden fees, no compromise on quality. We make your peso go further than you ever thought possible.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">🌺</div>
+          <h3>Philippine First</h3>
+          <p>We are proudly Filipino. We promote the beauty of our own country first — because the Philippines is one of the most stunning places on Earth.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section-blue about-cta">
+    <div class="wrap">
+      <div class="cta-inner">
+        <div class="cta-bear">🐻</div>
+        <h2>Ready to travel with us?</h2>
+        <p>Let Ms. Lota and the Tobi's Travels team plan your perfect Philippine adventure. We handle everything — you just show up!</p>
+        <div class="cta-btns">
+          <a href="index.html#book" class="btn-yellow">Book a trip →</a>
+          <a href="index.html#destinations" class="btn-ghost">See our packages</a>
+        </div>
+        <div class="cta-contact">
+          <a href="mailto:tobi.travelandtours@gmail.com"><i class="fas fa-envelope"></i> tobi.travelandtours@gmail.com</a>
+          <a href="https://www.tobistravels.com"><i class="fas fa-globe"></i> www.tobistravels.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div class="footer-left">
+        <img src="logo.png" alt="Tobi's Travels" class="footer-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='block'" />
+        <div class="footer-logo-fallback">
+          <span class="footer-logo-text">Tobi's <span>Travels</span></span>
+        </div>
+        <p>DOT Accredited · Est. 2011<br/>Travel On Budget Instantly!<br/>Making Filipino travel effortless since day one. 🐻</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="#" aria-label="Viber"><i class="fab fa-viber"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="index.html#tours">Tour Vibes</a>
+        <a href="index.html#destinations">Destinations</a>
+        <a href="about.html">About Us</a>
+        <a href="index.html#book">Book Now</a>
+      </div>
+      <div class="footer-links">
+        <h4>Destinations</h4>
+        <a href="index.html#book">Palawan</a>
+        <a href="index.html#book">Siargao</a>
+        <a href="index.html#book">Boracay</a>
+        <a href="index.html#book">Batanes</a>
+        <a href="index.html#book">Cebu</a>
+      </div>
+      <div class="footer-contact">
+        <h4>Say Hi! 🐻</h4>
+        <p><i class="fas fa-envelope"></i> tobi.travelandtours@gmail.com</p>
+        <p><i class="fas fa-globe"></i> www.tobistravels.com</p>
+        <div class="dot-badge">
+          <i class="fas fa-certificate"></i> DOT Accredited Agency
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Tobi's Travel & Tour Services Inc. All rights reserved. · DOT Accredited · Travel On Budget Instantly! 🐻</p>
+    </div>
+  </footer>
+
+  <script src="about.js"></script>
+</body>
+</html>

@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Domestic Tours — Tobi's Travels</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="tours.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500;600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav solid" id="nav">
+    <a href="index.html" class="nav-logo">
+      <img src="logo.png" alt="Tobi's Travels" class="nav-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+      <div class="nav-logo-fallback">
+        <span class="plane-icon">✈</span>
+        <div><span class="logo-text-main">Tobi's</span><span class="logo-text-sub">Travels</span></div>
+      </div>
+    </a>
+    <div class="nav-center">
+      <a href="tours.html" class="nav-active">Domestic Tours</a>
+      <a href="index.html#destinations">Packages</a>
+      <a href="about.html">About Us</a>
+    </div>
+    <a href="index.html#book" class="nav-book">Book a Trip →</a>
+    <button class="burger" id="burger"><i class="fas fa-bars"></i></button>
+  </nav>
+
+  <!-- MOBILE DRAWER -->
+  <div class="drawer" id="drawer">
+    <button class="drawer-close" id="drawerClose"><i class="fas fa-xmark"></i></button>
+    <div class="drawer-bear">🐻</div>
+    <a href="tours.html" class="drawer-link">Domestic Tours</a>
+    <a href="index.html#destinations" class="drawer-link">Packages</a>
+    <a href="about.html" class="drawer-link">About Us</a>
+    <a href="index.html#book" class="drawer-link drawer-cta">Book a Trip →</a>
+  </div>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <!-- HERO / COVER -->
+  <section class="tours-hero">
+    <div class="tours-hero-bg"></div>
+    <div class="tours-hero-tint"></div>
+    <div class="tours-hero-content">
+      <img src="logo.png" alt="Tobi's Travels" class="th-logo" onerror="this.style.display='none'" />
+      <div class="pill">🏖️ Philippine Domestic Tours</div>
+      <h1>Explore the<br/><em>Philippines</em></h1>
+      <p>7,641 islands. Endless adventures. Let Tobi's handle all the planning!</p>
+      <div class="th-contact">
+        <a href="tel:+639173090783"><i class="fas fa-phone"></i> +63 917 309 0783</a>
+        <span>·</span>
+        <a href="tel:+639985940643"><i class="fas fa-phone"></i> +63 998 594 0643</a>
+        <span>·</span>
+        <a href="mailto:tobi.travelandtours@gmail.com"><i class="fas fa-envelope"></i> tobi.travelandtours@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPANY BANNER -->
+  <div class="company-bar">
+    <div class="wrap company-bar-inner">
+      <div class="cb-name">
+        <strong>Tobi's Travel & Tour Services Inc.</strong>
+        <span>Travel On Budget Instantly! · DOT Accredited</span>
+      </div>
+      <div class="cb-details">
+        <span><i class="fas fa-map-marker-alt"></i> Unit 100 GF Park Place Centre Bldg., Marcos Highway, Brgy. Mayamot, Antipolo City, Rizal 1870</span>
+      </div>
+      <div class="cb-badges">
+        <span class="cb-badge">TPB</span>
+        <span class="cb-badge">DOT</span>
+        <span class="cb-badge">RTAA</span>
+        <span class="cb-badge">PATA</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- FILTER TABS -->
+  <section class="tours-main">
+    <div class="wrap">
+
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">🗺️ All Destinations</button>
+        <button class="filter-btn" data-filter="beach">🏖️ Beach & Islands</button>
+        <button class="filter-btn" data-filter="adventure">🏔️ Adventure</button>
+        <button class="filter-btn" data-filter="cultural">🏛️ Cultural</button>
+        <button class="filter-btn" data-filter="nature">🌿 Nature</button>
+        <button class="filter-btn" data-filter="budget">💸 Budget Picks</button>
+      </div>
+
+      <div class="results-info">
+        <span id="resultsCount">Showing all destinations</span>
+        <a href="index.html#book" class="btn-solid btn-sm">Can't find yours? Ask us →</a>
+      </div>
+
+      <!-- TOUR GRID -->
+      <div class="mini-grid" id="tourGrid">
+
+        <!-- PALAWAN -->
+        <div class="mini-card" data-cat="beach">
+          <div class="mc-img">
+            <img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?w=500&q=75" alt="El Nido" loading="lazy"/>
+            <span class="mc-tag hot">🔥 Most Popular</span>
+            <span class="mc-dur">4D·3N</span>
+          </div>
+          <div class="mc-body">
+            <div class="mc-loc"><i class="fas fa-location-dot"></i> El Nido, Palawan</div>
+            <h3>El Nido Island Hopping</h3>
+            <div class="mc-incl"><span>✈️</span><span>🏨</span><span>🚤</span><span>🚐</span></div>
+            <div class="mc-footer">
+              <span class="mc-price">₱18,500</span>
+              <a href="index.html#book" class="mc-btn">Book</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="mini-card" data-cat="beach">
+          <div class="mc-img">
+            <img src="https://images.unsplash.com/photo-1545579133-99bb5ad189be?w=500&q=75" alt="Coron" loading="lazy"/>
+            <span class="mc-tag">🤿 Diver's Pick</span>
+            <span class="mc-dur">5D·4N</span>
+          </div>
+          <div class="mc-body">
+            <div class="mc-loc"><i class="fas fa-location-dot"></i> Coron, Palawan</div>
+            <h3>Coron Wreck Diving</h3>
+            <div class="mc-incl"><span>✈️</span><span>🏨</span><span>🤿</span><span>🚤</span></div>
+            <div class="mc-footer">
+              <span class="mc-price">₱24,000</span>
+              <a href="index.html#book" class="mc-btn">Book</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="mini-card" data-cat="beach nature">
+          <div class="mc-img">
+            <img src="https://images.unsplash.com/photo-1559628233-f6f392bd8b67?w=500&q=75" alt="Port Barton" loading="lazy"/>
+            <span class="mc-tag green">🌿 Hidden Gem</span>
+            <span class="mc-dur">4D·3N</span>
+          </div>
+          <div class="mc-body">
+            <div class="mc-loc"><i class="fas fa-location-dot"></i> Port Barton, Palawan</div>
+            <h3>Port Barton Escape</h3>
+            <div class="mc-incl"><span>🚌</span><span>🏡</span><span>🚤</span><span>🍲</span></div>
+            <div class="mc-footer">
+              <span class="mc-price">₱12,500</span>
+              <a href="index.html#book" class="mc-btn">Book</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- SIARGAO -->
+        <div class="mini-card" data-cat="beach adventure">
+          <div class="mc-img">
+            <img src="https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?w=500&q=75" alt="Siargao" loading="lazy"/>
+            <span class="mc-tag blue">🏄 Trending</span>
+            <span class="mc-dur">5D·4N</span>
+          </div>
+          <div class="mc-body">
+            <div class="mc-loc"><i class="fas fa-location-dot"></i> Siargao Island</div>
+            <h3>Siargao Surf & Chill</h3>
+            <div class="mc-incl"><span>✈️</span><span>🏨</span><span>🏄</span><span>🌴</span></div>
+            <div class="mc-footer">
+              <span class="mc-price">₱22,000</span>
+              <a href="index.html#book" class="mc-btn">Book</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- BORACAY -->
+        <div class="mini-card" data-cat="beach">
+          <div class="mc-img">
+            <img src="https://images.unsplash.com/photo-1573790387438-4da905039392?w=500&q=75" alt="Boracay" loading="lazy"/>
+            <span class="mc-tag pink">☀️ Classic</span>
+            <span class="mc-dur">4D·3N</span>
+          </div>
+          <div class="mc-body">
+            <div class="mc-loc"><i class="fas fa-location-dot"></i> Boracay, Aklan</div>
+            <h3>Boracay Beach Escape</h3>
+            <div class="mc-incl"><span>✈️</span><span>🏨</span><span>⛵</span><span>🎉</span></div>
+            <div class="mc-footer">
+              <span class="mc-price">₱20,500</span>
+              <a href="index.html#book" class="mc-btn">Book</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CEBU -->
+        <div class="mini-card" data-cat="beach adventure">
+          <div class="mc-img">
+            <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=500&q=75" alt="Cebu" loading="lazy"/>
+            <span class="mc-tag hot">🐋 Bucket List</span>
+            <span class="mc-dur">4D·3N</span>
+          </div>
+          <div class="mc-body">
+            <div class="mc-loc"><i class="fas fa-location-dot"></i> Cebu & Oslob</div>
+            <h3>Cebu Whale Shark Tour</h3>
+            <div class="mc-incl"><span>✈️</span><span>🏨</span><span>🦈</span><span>🏊</span></div>
+            <div class="mc-footer">
+              <span class="mc-price">₱19,500</span>
+              <a href="index.html#book" class="mc-btn">Book</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="mini-card" data-cat="adventure nature budget">
+          <div class="mc-img">
+            <img src="https://images.unsplash.com/photo-1567521464027-f127ff144326?w=500&q=75" alt="Kawasan" loading="lazy"/>
+            <span class="mc-tag green">💦 Adventure</span>
+            <span class="mc-dur">3D·2N</span>
+          </div>
+          <div class="mc-body">
+            <div class="mc-loc"><i class="fas fa-location-dot"></i> Kawasan Falls, Cebu</div>
+            <h3>Canyoneering Adventure</h3>
+            <div class="mc-incl"><span>✈️</span><span>🏨</span><span>🏊</span><span>🎒</span></div>
+            <div class="mc-footer">
+              <span class="mc-price">₱14,000</span>
+              <a href="index.html#book" class="mc-btn">Book</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- BOHOL -->
+        <div class="mini-card" data-cat="cultural nature">
+          <div class="mc-img">
+            <img src="https://images.unsplash.com/photo-1573168710465-7f2769b918e6?w=500&q=75" alt="Bohol" loading="lazy"/>
+            <span class="mc-tag">🌄 Scenic</span>
+            <span class="mc-dur">4D·3N</span>
+          </div>
+          <div class="mc-body">
+            <div class="mc-loc"><i class="fas fa-location-dot"></i> Bohol</div>
+            <h3>Chocolate Hills & Panglao</h3>
+            <div class="mc-incl"><span>✈️</span><span>🏨</span><span>🚌</span><span>🐒</span></div>
+            <div class="mc-footer">
+              <span class="mc-price">₱17,500</span>
+              <a href="index.html#book" class="mc-btn">Book</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- BATANES -->
+        <div class="mini-card" data-cat="cultural nature adventure">
+          <div class="mc-img">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=75" alt="Batanes" loading="lazy"/>
+            <span class="mc-tag green">🌿 Hidden Gem</span>
+            <span class="mc-dur">5D·4N</span>
+          </div>
+          <div class="mc-body">
+            <div class="mc-loc"><i class="fas fa-location-dot"></i> Batanes Islands</div>
+            <h3>Batanes Highlands Escape</h3>
+            <div class="mc-incl"><span>✈️</span><span>🏡</span><span>🚌</span><span>🍲</span></div>
+            <div class="mc-footer">
+              <span class="mc-price">₱35,000</span>
+              <a href="index.html#book" class="mc-btn">Book</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- DAVAO -->
+        <div class="mini-card" data-cat="adventure nature">
+          <div class="mc-img">
+            <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=500&q=75" alt="Davao" loading="lazy"/>
+            <span class="mc-tag blue">🦅 Wild Side</span>
+            <span class="mc-dur">4D·3N</span>
+          </div>
+          <div class="mc-body">
+            <div class="mc-loc"><i class="fas fa-location-dot"></i> Davao & Samal Island</div>
+            <h3>Davao Explorer Package</h3>
+            <div class="mc-incl"><span>✈️</span><span>🏨</span><span>🚤</span><span>🦅</span></div>
+            <div class="mc-footer">
+              <span class="mc-price">₱20,000</span>
+              <a href="index.html#book" class="mc-btn">Book</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ILOCOS -->
+        <div class="mini-card" data-cat="cultural">
+          <div class="mc-img">
+            <img src="https://images.unsplash.com/photo-1597466765767-d73dd853b4f3?w=500&q=75" alt="Ilocos" loading="lazy"/>
+            <span class="mc-tag pink">🏛️ Heritage</span>
+            <span class="mc-dur">4D·3N</span>
+          </div>
+          <div class="mc-body">
+            <div class="mc-loc"><i class="fas fa-location-dot"></i> Ilocos Norte & Sur</div>
+            <h3>Ilocos Heritage Tour</h3>
+            <div class="mc-incl"><span>🚌</span><span>🏨</span><span>🏛️</span><span>🍲</span></div>
+            <div class="mc-footer">
+              <span class="mc-price">₱13,500</span>
+              <a href="index.html#book" class="mc-btn">Book</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- BATANGAS -->
+        <div class="mini-card" data-cat="beach adventure budget">
+          <div class="mc-img">
+            <img src="https://images.unsplash.com/photo-1504214208698-ea1916a2195a?w=500&q=75" alt="Batangas" loading="lazy"/>
+            <span class="mc-tag hot">💸 Budget Pick</span>
+            <span class="mc-dur">2D·1N</span>
+          </div>
+          <div class="mc-body">
+            <div class="mc-loc"><i class="fas fa-location-dot"></i> Batangas</div>
+            <h3>Anilao Diving Weekend</h3>
+            <div class="mc-incl"><span>🚌</span><span>🏨</span><span>🤿</span><span>🍳</span></div>
+            <div class="mc-footer">
+              <span class="mc-price">₱6,500</span>
+              <a href="index.html#book" class="mc-btn">Book</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CAMIGUIN -->
+        <div class="mini-card" data-cat="beach nature adventure">
+          <div class="mc-img">
+            <img src="https://images.unsplash.com/photo-1559628233-44f990a14e43?w=500&q=75" alt="Camiguin" loading="lazy"/>
+            <span class="mc-tag green">🌺 Underrated</span>
+            <span class="mc-dur">4D·3N</span>
+          </div>
+          <div class="mc-body">
+            <div class="mc-loc"><i class="fas fa-location-dot"></i> Camiguin Island</div>
+            <h3>Camiguin Island Hopping</h3>
+            <div class="mc-incl"><span>✈️</span><span>🏡</span><span>🚤</span><span>🌋</span></div>
+            <div class="mc-footer">
+              <span class="mc-price">₱18,000</span>
+              <a href="index.html#book" class="mc-btn">Book</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PUERTO GALERA -->
+        <div class="mini-card" data-cat="beach adventure budget">
+          <div class="mc-img">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500&q=75" alt="Puerto Galera" loading="lazy"/>
+            <span class="mc-tag hot">💸 Budget Pick</span>
+            <span class="mc-dur">3D·2N</span>
+          </div>
+          <div class="mc-body">
+            <div class="mc-loc"><i class="fas fa-location-dot"></i> Puerto Galera, Mindoro</div>
+            <h3>Puerto Galera Beach Trip</h3>
+            <div class="mc-incl"><span>🚌</span><span>⛴️</span><span>🏨</span><span>🤿</span></div>
+            <div class="mc-footer">
+              <span class="mc-price">₱8,500</span>
+              <a href="index.html#book" class="mc-btn">Book</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARAMOAN -->
+        <div class="mini-card" data-cat="beach adventure">
+          <div class="mc-img">
+            <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?w=500&q=75" alt="Caramoan" loading="lazy"/>
+            <span class="mc-tag blue">🏝️ Survivor Vibes</span>
+            <span class="mc-dur">4D·3N</span>
+          </div>
+          <div class="mc-body">
+            <div class="mc-loc"><i class="fas fa-location-dot"></i> Caramoan, Camarines Sur</div>
+            <h3>Caramoan Island Hopping</h3>
+            <div class="mc-incl"><span>🚌</span><span>🏡</span><span>🚤</span><span>🏊</span></div>
+            <div class="mc-footer">
+              <span class="mc-price">₱15,500</span>
+              <a href="index.html#book" class="mc-btn">Book</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- SAMAR -->
+        <div class="mini-card" data-cat="adventure nature">
+          <div class="mc-img">
+            <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=500&q=75" alt="Samar" loading="lazy"/>
+            <span class="mc-tag green">🌀 Off the Grid</span>
+            <span class="mc-dur">4D·3N</span>
+          </div>
+          <div class="mc-body">
+            <div class="mc-loc"><i class="fas fa-location-dot"></i> Eastern Samar</div>
+            <h3>Samar Caving & Surfing</h3>
+            <div class="mc-incl"><span>✈️</span><span>🏨</span><span>🏄</span><span>🦇</span></div>
+            <div class="mc-footer">
+              <span class="mc-price">₱21,000</span>
+              <a href="index.html#book" class="mc-btn">Book</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PAGUDPUD -->
+        <div class="mini-card" data-cat="beach budget">
+          <div class="mc-img">
+            <img src="https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=500&q=75" alt="Pagudpud" loading="lazy"/>
+            <span class="mc-tag hot">💸 Budget Pick</span>
+            <span class="mc-dur">3D·2N</span>
+          </div>
+          <div class="mc-body">
+            <div class="mc-loc"><i class="fas fa-location-dot"></i> Pagudpud, Ilocos Norte</div>
+            <h3>Pagudpud White Beach</h3>
+            <div class="mc-incl"><span>🚌</span><span>🏨</span><span>🏖️</span><span>🌅</span></div>
+            <div class="mc-footer">
+              <span class="mc-price">₱9,000</span>
+              <a href="index.html#book" class="mc-btn">Book</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- SUBIC / ZAMBALES -->
+        <div class="mini-card" data-cat="beach adventure budget">
+          <div class="mc-img">
+            <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=500&q=75" alt="Zambales" loading="lazy"/>
+            <span class="mc-tag hot">💸 Budget Pick</span>
+            <span class="mc-dur">2D·1N</span>
+          </div>
+          <div class="mc-body">
+            <div class="mc-loc"><i class="fas fa-location-dot"></i> Zambales</div>
+            <h3>Anawangin Cove Trek</h3>
+            <div class="mc-incl"><span>🚌</span><span>⛺</span><span>🚤</span><span>🏕️</span></div>
+            <div class="mc-footer">
+              <span class="mc-price">₱5,500</span>
+              <a href="index.html#book" class="mc-btn">Book</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- MT. PULAG -->
+        <div class="mini-card" data-cat="adventure nature">
+          <div class="mc-img">
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=500&q=75" alt="Mt Pulag" loading="lazy"/>
+            <span class="mc-tag blue">⛰️ Epic Trek</span>
+            <span class="mc-dur">3D·2N</span>
+          </div>
+          <div class="mc-body">
+            <div class="mc-loc"><i class="fas fa-location-dot"></i> Mt. Pulag, Benguet</div>
+            <h3>Mt. Pulag Sea of Clouds</h3>
+            <div class="mc-incl"><span>🚌</span><span>⛺</span><span>🧭</span><span>🍳</span></div>
+            <div class="mc-footer">
+              <span class="mc-price">₱9,500</span>
+              <a href="index.html#book" class="mc-btn">Book</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- VIGAN -->
+        <div class="mini-card" data-cat="cultural budget">
+          <div class="mc-img">
+            <img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=500&q=75" alt="Vigan" loading="lazy"/>
+            <span class="mc-tag pink">🏛️ UNESCO Heritage</span>
+            <span class="mc-dur">3D·2N</span>
+          </div>
+          <div class="mc-body">
+            <div class="mc-loc"><i class="fas fa-location-dot"></i> Vigan, Ilocos Sur</div>
+            <h3>Vigan Heritage Walk</h3>
+            <div class="mc-incl"><span>🚌</span><span>🏨</span><span>🚗</span><span>🍲</span></div>
+            <div class="mc-footer">
+              <span class="mc-price">₱8,000</span>
+              <a href="index.html#book" class="mc-btn">Book</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAAL -->
+        <div class="mini-card" data-cat="adventure nature budget">
+          <div class="mc-img">
+            <img src="https://images.unsplash.com/photo-1578469645742-46cae010e5d4?w=500&q=75" alt="Taal" loading="lazy"/>
+            <span class="mc-tag hot">🌋 Day Trip</span>
+            <span class="mc-dur">2D·1N</span>
+          </div>
+          <div class="mc-body">
+            <div class="mc-loc"><i class="fas fa-location-dot"></i> Taal Volcano, Batangas</div>
+            <h3>Taal Volcano Trek</h3>
+            <div class="mc-incl"><span>🚌</span><span>🏨</span><span>🚤</span><span>🐴</span></div>
+            <div class="mc-footer">
+              <span class="mc-price">₱7,000</span>
+              <a href="index.html#book" class="mc-btn">Book</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CUSTOM -->
+        <div class="mini-card mini-card-ask">
+          <div class="ask-inner">
+            <div class="ask-bear">🐻</div>
+            <h3>Don't see your destination?</h3>
+            <p>We go anywhere in the Philippines! Tell us where and we'll build your custom package.</p>
+            <a href="index.html#book" class="btn-yellow btn-sm">Ask Tobi Bear →</a>
+          </div>
+        </div>
+
+      </div><!-- end tourGrid -->
+    </div>
+  </section>
+
+  <!-- CONTACT STRIP -->
+  <section class="contact-strip">
+    <div class="wrap contact-strip-inner">
+      <div class="cs-logo">
+        <img src="logo.png" alt="Tobi's Travels" onerror="this.style.display='none'" />
+      </div>
+      <div class="cs-info">
+        <strong>Tobi's Travel & Tour Services Inc.</strong>
+        <p>Unit 100 GF Park Place Centre Bldg., Marcos Highway, Brgy. Mayamot, Antipolo City, Rizal 1870</p>
+      </div>
+      <div class="cs-contacts">
+        <a href="tel:+639173090783"><i class="fas fa-phone"></i> +63 917 309 0783</a>
+        <a href="tel:+639985940643"><i class="fas fa-phone"></i> +63 998 594 0643</a>
+        <a href="mailto:tobi.travelandtours@gmail.com"><i class="fas fa-envelope"></i> tobi.travelandtours@gmail.com</a>
+        <a href="https://www.tobistravels.com"><i class="fas fa-globe"></i> www.tobistravels.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div class="footer-left">
+        <img src="logo.png" alt="Tobi's Travels" class="footer-logo-img" onerror="this.style.display:'none'" />
+        <div class="footer-logo-fallback"><span class="footer-logo-text">Tobi's <span>Travels</span></span></div>
+        <p>DOT Accredited · Est. 2011<br/>Travel On Budget Instantly!<br/>RTAA · PATA Philippines · TPB Member</p>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+          <a href="#"><i class="fab fa-viber"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Tours</h4>
+        <a href="tours.html?filter=beach">Beach & Islands</a>
+        <a href="tours.html?filter=adventure">Adventure</a>
+        <a href="tours.html?filter=cultural">Cultural</a>
+        <a href="tours.html?filter=budget">Budget Picks</a>
+      </div>
+      <div class="footer-links">
+        <h4>Company</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="index.html#book">Book a Trip</a>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Us 🐻</h4>
+        <p><i class="fas fa-phone"></i> +63 917 309 0783</p>
+        <p><i class="fas fa-phone"></i> +63 998 594 0643</p>
+        <p><i class="fas fa-envelope"></i> tobi.travelandtours@gmail.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Antipolo City, Rizal 1870</p>
+        <div class="dot-badge"><i class="fas fa-certificate"></i> DOT Accredited Agency</div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Tobi's Travel & Tour Services Inc. All rights reserved. · DOT · RTAA · PATA · TPB 🐻</p>
+    </div>
+  </footer>
+
+  <script src="tours.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Blog — Tobi's Travels</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="blog.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500;600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav solid" id="nav">
+    <a href="index.html" class="nav-logo">
+      <img src="logo.png" alt="Tobi's Travels" class="nav-logo-img" onerror="this.style.display:'none';this.nextElementSibling.style.display='flex'" />
+      <div class="nav-logo-fallback">
+        <span class="plane-icon">✈</span>
+        <div><span class="logo-text-main">Tobi's</span><span class="logo-text-sub">Travels</span></div>
+      </div>
+    </a>
+    <div class="nav-center">
+      <a href="tours.html">Domestic Tours</a>
+      <a href="index.html#destinations">Packages</a>
+      <a href="blog.html" class="nav-active">Blog</a>
+      <a href="about.html">About Us</a>
+    </div>
+    <a href="index.html#book" class="nav-book">Book a Trip →</a>
+    <button class="burger" id="burger"><i class="fas fa-bars"></i></button>
+  </nav>
+
+  <!-- MOBILE DRAWER -->
+  <div class="drawer" id="drawer">
+    <button class="drawer-close" id="drawerClose"><i class="fas fa-xmark"></i></button>
+    <div class="drawer-bear">🐻</div>
+    <a href="tours.html" class="drawer-link">Domestic Tours</a>
+    <a href="index.html#destinations" class="drawer-link">Packages</a>
+    <a href="blog.html" class="drawer-link">Blog</a>
+    <a href="about.html" class="drawer-link">About Us</a>
+    <a href="index.html#book" class="drawer-link drawer-cta">Book a Trip →</a>
+  </div>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <!-- BLOG HERO -->
+  <section class="blog-hero">
+    <div class="blog-hero-bg"></div>
+    <div class="blog-hero-tint"></div>
+    <div class="blog-hero-content">
+      <div class="pill">📝 Tobi's Travel Blog</div>
+      <h1>Travel smarter.<br/><em>Live better.</em></h1>
+      <p>Tips, guides, and stories from Tobi's Travels — your trusted Philippine travel experts since 2011.</p>
+    </div>
+  </section>
+
+  <!-- BLOG LISTING -->
+  <section class="section blog-listing">
+    <div class="wrap">
+
+      <!-- FEATURED POST -->
+      <div class="blog-featured">
+        <a href="blog-smart-travel.html" class="bf-card">
+          <div class="bf-img">
+            <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=900&q=80" alt="Smart Travel" loading="lazy" />
+            <span class="bf-label">📌 Featured Post</span>
+          </div>
+          <div class="bf-body">
+            <div class="bf-meta">
+              <span class="bf-cat">💡 Travel Tips</span>
+              <span class="bf-date"><i class="fas fa-calendar"></i> June 2026</span>
+              <span class="bf-read"><i class="fas fa-clock"></i> 8 min read</span>
+            </div>
+            <h2>Smart Travel, Not Cheap Travel: Get More from Every Peso with Tobi's Travels</h2>
+            <p>There's a big difference between traveling cheap and traveling smart. One leaves you exhausted and disappointed. The other leaves you with full memories, a full stomach, and still money in your wallet. Here's how Tobi's Travels helps you do exactly that.</p>
+            <div class="bf-author">
+              <div class="bf-av">🐻</div>
+              <div>
+                <strong>Tobi's Travels Team</strong>
+                <span>Tobi's Travel & Tour Services Inc.</span>
+              </div>
+            </div>
+            <span class="bf-read-more">Read full post →</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- MORE POSTS (placeholder) -->
+      <div class="blog-grid">
+        <div class="blog-card blog-card-coming">
+          <div class="bc-icon">🏖️</div>
+          <h3>Top 10 Budget-Friendly Beaches Near Metro Manila</h3>
+          <p>You don't need a ₱20,000 budget to enjoy a great beach. Here are 10 stunning spots just a few hours from the city.</p>
+          <span class="bc-coming">Coming Soon</span>
+        </div>
+        <div class="blog-card blog-card-coming">
+          <div class="bc-icon">🎒</div>
+          <h3>The Ultimate Packing List for a Philippine Island Trip</h3>
+          <p>Never forget your reef-safe sunscreen again. Tobi Bear's definitive packing guide for PH island-hopping adventures.</p>
+          <span class="bc-coming">Coming Soon</span>
+        </div>
+        <div class="blog-card blog-card-coming">
+          <div class="bc-icon">🤿</div>
+          <h3>Palawan vs. Siargao: Which One Should You Visit First?</h3>
+          <p>Both are jaw-droppingly beautiful. Both are bucket-list worthy. But which should you book first? Tobi's verdict inside.</p>
+          <span class="bc-coming">Coming Soon</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div class="footer-left">
+        <img src="logo.png" alt="Tobi's Travels" class="footer-logo-img" onerror="this.style.display:'none'" />
+        <div class="footer-logo-fallback"><span class="footer-logo-text">Tobi's <span>Travels</span></span></div>
+        <p>DOT Accredited · Est. 2011<br/>Travel On Budget Instantly! 🐻</p>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+          <a href="#"><i class="fab fa-viber"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="tours.html">Domestic Tours</a>
+        <a href="index.html#destinations">Packages</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About Us</a>
+        <a href="index.html#book">Book Now</a>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p><i class="fas fa-phone"></i> +63 917 309 0783</p>
+        <p><i class="fas fa-phone"></i> +63 998 594 0643</p>
+        <p><i class="fas fa-envelope"></i> tobi.travelandtours@gmail.com</p>
+        <p><i class="fas fa-globe"></i> www.tobistravels.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Antipolo City, Rizal 1870</p>
+        <div class="dot-badge"><i class="fas fa-certificate"></i> DOT Accredited Agency</div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Tobi's Travel & Tour Services Inc. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="blog.js"></script>
+</body>
+</html>

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tobi's Travels — Travel On Budget Instantly!</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500;600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="#top" class="nav-logo">
+      <img src="logo.png" alt="Tobi's Travels Logo" class="nav-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+      <div class="nav-logo-fallback">
+        <span class="plane-icon">✈</span>
+        <div>
+          <span class="logo-text-main">Tobi's</span>
+          <span class="logo-text-sub">Travels</span>
+        </div>
+      </div>
+    </a>
+    <div class="nav-center">
+      <a href="tours.html">Domestic Tours</a>
+      <a href="#destinations">Packages</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About Us</a>
+    </div>
+    <a href="#book" class="nav-book">Book a Trip →</a>
+    <button class="burger" id="burger"><i class="fas fa-bars"></i></button>
+  </nav>
+
+  <!-- MOBILE DRAWER -->
+  <div class="drawer" id="drawer">
+    <button class="drawer-close" id="drawerClose"><i class="fas fa-xmark"></i></button>
+    <div class="drawer-bear">🐻</div>
+    <a href="tours.html" class="drawer-link">Domestic Tours</a>
+    <a href="#destinations" class="drawer-link">Packages</a>
+    <a href="blog.html" class="drawer-link">Blog</a>
+    <a href="about.html" class="drawer-link">About Us</a>
+    <a href="#book" class="drawer-link drawer-cta">Book a Trip →</a>
+  </div>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-bg">
+      <div class="hero-slide active" style="background-image:url('https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?w=1600&q=80')"></div>
+      <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?w=1600&q=80')"></div>
+      <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1573790387438-4da905039392?w=1600&q=80')"></div>
+    </div>
+    <div class="hero-tint"></div>
+
+    <div class="hero-content">
+      <div class="hero-logo-wrap">
+        <img src="logo.png" alt="Tobi's Travels" class="hero-logo" onerror="this.style.display='none'" />
+      </div>
+      <div class="pill">🐻 Travel On Budget Instantly!</div>
+      <h1>The Philippines<br/><em>is calling.</em></h1>
+      <p>Stop dreaming, start booking. Tobi's Travels handles everything — you just show up and have fun!</p>
+      <div class="hero-actions">
+        <a href="#tours" class="btn-solid">See our tours ✈️</a>
+        <a href="#book" class="btn-ghost">Get a free quote</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll">scroll down ↓</div>
+
+    <div class="hero-bar">
+      <div class="hb-item"><span class="hb-num">13+</span><span class="hb-txt">years of service</span></div>
+      <div class="hb-item"><span class="hb-num">5K+</span><span class="hb-txt">happy travelers</span></div>
+      <div class="hb-item"><span class="hb-num">100%</span><span class="hb-txt">DOT accredited</span></div>
+      <div class="hb-item"><span class="hb-num">24/7</span><span class="hb-txt">trip support</span></div>
+    </div>
+  </section>
+
+  <!-- BEAR MASCOT BANNER -->
+  <div class="bear-banner">
+    <div class="wrap bear-banner-inner">
+      <div class="bear-avatar">🐻</div>
+      <div class="bear-text">
+        <strong>Hi, I'm Tobi Bear!</strong>
+        <p>Your travel BFF. I help you find the best Philippine trips <em>without breaking the bank.</em> Let's go on an adventure! 🌴</p>
+      </div>
+      <a href="#book" class="btn-solid">Let's go!</a>
+    </div>
+  </div>
+
+  <!-- TOUR VIBES -->
+  <section class="section" id="tours">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="tag">🐻 what's your vibe?</span>
+        <h2>Pick your kind of trip</h2>
+        <p class="sec-desc">From beach bumming to mountain climbing — Tobi's got you covered.</p>
+      </div>
+      <div class="vibes-grid">
+        <a href="#book" class="vibe-card">
+          <div class="vibe-icon">🏖️</div>
+          <h3>Beach & Islands</h3>
+          <p>Crystal water, white sand, no Wi-Fi needed</p>
+          <span class="vibe-arrow">→</span>
+        </a>
+        <a href="#book" class="vibe-card">
+          <div class="vibe-icon">🏔️</div>
+          <h3>Adventure</h3>
+          <p>Hike, dive, surf — push your limits</p>
+          <span class="vibe-arrow">→</span>
+        </a>
+        <a href="#book" class="vibe-card">
+          <div class="vibe-icon">🏛️</div>
+          <h3>Culture & Heritage</h3>
+          <p>Old churches, festivals, local food</p>
+          <span class="vibe-arrow">→</span>
+        </a>
+        <a href="#book" class="vibe-card">
+          <div class="vibe-icon">👯</div>
+          <h3>Barkada Trips</h3>
+          <p>Group packages built for squads</p>
+          <span class="vibe-arrow">→</span>
+        </a>
+        <a href="#book" class="vibe-card">
+          <div class="vibe-icon">💑</div>
+          <h3>Couples Getaway</h3>
+          <p>Romantic spots without the hassle</p>
+          <span class="vibe-arrow">→</span>
+        </a>
+        <a href="#book" class="vibe-card">
+          <div class="vibe-icon">💸</div>
+          <h3>Budget Trips</h3>
+          <p>Travel more, spend less. Really.</p>
+          <span class="vibe-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED TOURS -->
+  <section class="section section-blue" id="destinations">
+    <div class="wrap">
+      <div class="sec-head sec-head-light">
+        <span class="tag tag-yellow">✈️ featured packages</span>
+        <h2>Top PH destinations <em>right now</em></h2>
+        <p class="sec-desc sec-desc-light">All packages include Tobi Bear's personal seal of approval 🐻✅</p>
+      </div>
+
+      <div class="tours-grid">
+        <div class="tour-card">
+          <div class="tour-img">
+            <img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?w=700&q=80" alt="Palawan" loading="lazy"/>
+            <div class="tour-tag">🔥 Most Popular</div>
+            <div class="tour-duration">4D · 3N</div>
+          </div>
+          <div class="tour-body">
+            <div class="tour-loc"><i class="fas fa-location-dot"></i> El Nido, Palawan</div>
+            <h3>El Nido Island Hopping</h3>
+            <p>Lagoons, cliffs, hidden beaches. The main character arc of Philippine travel.</p>
+            <div class="tour-includes">
+              <span>✈️ Airfare</span><span>🏨 Hotel</span><span>🚤 Tours</span><span>🚐 Transfer</span>
+            </div>
+            <div class="tour-footer">
+              <div class="tour-price">₱18,500 <small>/ person</small></div>
+              <a href="#book" class="btn-solid btn-sm">Book it</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="tour-card">
+          <div class="tour-img">
+            <img src="https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?w=700&q=80" alt="Siargao" loading="lazy"/>
+            <div class="tour-tag tour-tag-yellow">🏄 Trending</div>
+            <div class="tour-duration">5D · 4N</div>
+          </div>
+          <div class="tour-body">
+            <div class="tour-loc"><i class="fas fa-location-dot"></i> Siargao Island</div>
+            <h3>Siargao Surf & Chill</h3>
+            <p>Surf in the morning, coconuts by noon, island hopping by afternoon.</p>
+            <div class="tour-includes">
+              <span>✈️ Airfare</span><span>🏨 Hostel</span><span>🏄 Lessons</span><span>🌴 Hopping</span>
+            </div>
+            <div class="tour-footer">
+              <div class="tour-price">₱22,000 <small>/ person</small></div>
+              <a href="#book" class="btn-solid btn-sm">Book it</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="tour-card">
+          <div class="tour-img">
+            <img src="https://images.unsplash.com/photo-1573790387438-4da905039392?w=700&q=80" alt="Boracay" loading="lazy"/>
+            <div class="tour-tag tour-tag-cyan">☀️ Classic</div>
+            <div class="tour-duration">4D · 3N</div>
+          </div>
+          <div class="tour-body">
+            <div class="tour-loc"><i class="fas fa-location-dot"></i> Boracay, Aklan</div>
+            <h3>Boracay Beach Escape</h3>
+            <p>White Beach, party vibes, sunset sailing. The OG Philippine island experience.</p>
+            <div class="tour-includes">
+              <span>✈️ Airfare</span><span>🏨 Hotel</span><span>⛵ Sailing</span><span>🎉 Activities</span>
+            </div>
+            <div class="tour-footer">
+              <div class="tour-price">₱20,500 <small>/ person</small></div>
+              <a href="#book" class="btn-solid btn-sm">Book it</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="tour-card">
+          <div class="tour-img">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80" alt="Batanes" loading="lazy"/>
+            <div class="tour-tag tour-tag-green">🌿 Hidden Gem</div>
+            <div class="tour-duration">5D · 4N</div>
+          </div>
+          <div class="tour-body">
+            <div class="tour-loc"><i class="fas fa-location-dot"></i> Batanes Islands</div>
+            <h3>Batanes Highlands Escape</h3>
+            <p>Rolling hills, stone houses, dramatic cliffs. Most underrated spot in the PH.</p>
+            <div class="tour-includes">
+              <span>✈️ Airfare</span><span>🏡 Homestay</span><span>🚌 Tour</span><span>🍲 Meals</span>
+            </div>
+            <div class="tour-footer">
+              <div class="tour-price">₱35,000 <small>/ person</small></div>
+              <a href="#book" class="btn-solid btn-sm">Book it</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="tour-card">
+          <div class="tour-img">
+            <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=700&q=80" alt="Cebu" loading="lazy"/>
+            <div class="tour-tag">🐋 Bucket List</div>
+            <div class="tour-duration">4D · 3N</div>
+          </div>
+          <div class="tour-body">
+            <div class="tour-loc"><i class="fas fa-location-dot"></i> Cebu & Oslob</div>
+            <h3>Cebu Whale Shark Tour</h3>
+            <p>Swim with whale sharks, cliff jump at Kawasan Falls, eat the best lechon.</p>
+            <div class="tour-includes">
+              <span>✈️ Airfare</span><span>🏨 Hotel</span><span>🦈 Oslob</span><span>🏊 Kawasan</span>
+            </div>
+            <div class="tour-footer">
+              <div class="tour-price">₱19,500 <small>/ person</small></div>
+              <a href="#book" class="btn-solid btn-sm">Book it</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="tour-card tour-card-cta">
+          <div class="tour-cta-inner">
+            <div class="tour-cta-bear">🐻</div>
+            <h3>Don't see your dream trip?</h3>
+            <p>Tell Tobi Bear where you want to go and we'll build a custom package just for you!</p>
+            <a href="#book" class="btn-yellow">Build my trip →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section" id="how">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="tag">🐻 ridiculously easy</span>
+        <h2>How Tobi's works</h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <div class="step-bear">🐻</div>
+          <h3>Pick your trip</h3>
+          <p>Choose from our packages or tell Tobi Bear your dream destination.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <div class="step-bear">✈️</div>
+          <h3>We plan it all</h3>
+          <p>Flights, hotels, tours, transfers — we sort everything out for you.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <div class="step-bear">🌴</div>
+          <h3>You just show up</h3>
+          <p>Get your itinerary, pack your bags, and have the best trip ever.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="section section-navy" id="why">
+    <div class="wrap">
+      <div class="sec-head sec-head-light">
+        <span class="tag tag-yellow">🐻 why tobi's?</span>
+        <h2>No cap, we're the best.</h2>
+      </div>
+      <div class="reasons">
+        <div class="reason">
+          <span class="reason-icon">🏅</span>
+          <h3>DOT Certified</h3>
+          <p>Fully accredited by the Philippine Department of Tourism since 2011. Legit, not just hype.</p>
+        </div>
+        <div class="reason">
+          <span class="reason-icon">💬</span>
+          <h3>Always Online</h3>
+          <p>Questions at 2am? We answer. Trip drama? We fix it. 24/7 support, for real.</p>
+        </div>
+        <div class="reason">
+          <span class="reason-icon">💰</span>
+          <h3>T.O.B.I. Pricing</h3>
+          <p><strong>Travel On Budget Instantly!</strong> No hidden charges, no surprise fees. Ever.</p>
+        </div>
+        <div class="reason">
+          <span class="reason-icon">🎯</span>
+          <h3>We Know the PH</h3>
+          <p>13+ years. Every shortcut, secret spot, and local trick — we know it all.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section" id="reviews">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="tag">🐻 real reviews</span>
+        <h2>Don't take our word for it</h2>
+      </div>
+      <div class="reviews-grid">
+        <div class="review">
+          <div class="review-stars">★★★★★</div>
+          <p>"Booked our barkada trip to Siargao through Tobi's. Everything was smooth, zero stress. We literally just showed up and had the time of our lives!"</p>
+          <div class="review-author">
+            <div class="review-av">KR</div>
+            <div><strong>Kaye Reyes</strong><span>Siargao Barkada Trip</span></div>
+          </div>
+        </div>
+        <div class="review">
+          <div class="review-stars">★★★★★</div>
+          <p>"Honestly the best decision I made was letting Tobi's plan everything. The Palawan package was insane value. Already booked my second trip!"</p>
+          <div class="review-author">
+            <div class="review-av">MG</div>
+            <div><strong>Marco Garcia</strong><span>El Nido Island Hopping</span></div>
+          </div>
+        </div>
+        <div class="review">
+          <div class="review-stars">★★★★★</div>
+          <p>"They planned our honeymoon in Batanes — every detail was perfect. Tobi Bear really takes care of you! Highly recommend for couples!"</p>
+          <div class="review-author">
+            <div class="review-av">AL</div>
+            <div><strong>Ana & Luis</strong><span>Batanes Honeymoon</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING FORM -->
+  <section class="section section-blue" id="book">
+    <div class="wrap wrap-narrow">
+      <div class="sec-head sec-head-light">
+        <div class="book-bear">🐻</div>
+        <span class="tag tag-yellow">let's go!</span>
+        <h2>Book your trip</h2>
+        <p class="sec-desc sec-desc-light">Fill this out and Tobi Bear will hit you back in under 24 hours! ✌️</p>
+      </div>
+
+      <form class="book-form" id="bookForm">
+        <div class="bf-row">
+          <div class="bf-group">
+            <label>Your Name *</label>
+            <input type="text" name="name" placeholder="Juan dela Cruz" required />
+          </div>
+          <div class="bf-group">
+            <label>Email *</label>
+            <input type="email" name="email" placeholder="you@email.com" required />
+          </div>
+        </div>
+        <div class="bf-row">
+          <div class="bf-group">
+            <label>Phone / Viber</label>
+            <input type="tel" name="phone" placeholder="+63 9XX XXX XXXX" />
+          </div>
+          <div class="bf-group">
+            <label>No. of Travelers *</label>
+            <select name="pax" required>
+              <option value="">Select</option>
+              <option>Solo (1)</option>
+              <option>Couple (2)</option>
+              <option>Small group (3–5)</option>
+              <option>Barkada (6–10)</option>
+              <option>Large group (10+)</option>
+            </select>
+          </div>
+        </div>
+        <div class="bf-row">
+          <div class="bf-group">
+            <label>Where do you want to go? *</label>
+            <select name="destination" required>
+              <option value="">Pick a destination</option>
+              <option>El Nido, Palawan</option>
+              <option>Coron, Palawan</option>
+              <option>Siargao Island</option>
+              <option>Boracay</option>
+              <option>Batanes</option>
+              <option>Cebu & Oslob</option>
+              <option>Bohol</option>
+              <option>Davao & Samal</option>
+              <option>Ilocos Norte</option>
+              <option>Batangas</option>
+              <option>Somewhere else (tell us below)</option>
+            </select>
+          </div>
+          <div class="bf-group">
+            <label>When are you going?</label>
+            <input type="text" name="dates" placeholder="e.g. August 2026, flexible" />
+          </div>
+        </div>
+        <div class="bf-group">
+          <label>Anything else? (budget, requests, questions)</label>
+          <textarea name="message" rows="4" placeholder="Tell us your budget, what you want to do, or just say hi to Tobi Bear 🐻👋"></textarea>
+        </div>
+        <button type="submit" class="btn-yellow btn-full">
+          🐻 Send my inquiry →
+        </button>
+        <p class="bf-note">No spam. No pressure. Just Tobi Bear reaching out with your perfect trip! ✌️</p>
+      </form>
+
+      <div class="contact-chips">
+        <a href="tel:+639173090783" class="chip"><i class="fas fa-phone"></i> +63 917 309 0783</a>
+        <a href="tel:+639985940643" class="chip"><i class="fas fa-phone"></i> +63 998 594 0643</a>
+        <a href="mailto:tobi.travelandtours@gmail.com" class="chip"><i class="fas fa-envelope"></i> tobi.travelandtours@gmail.com</a>
+        <a href="https://www.tobistravels.com" class="chip"><i class="fas fa-globe"></i> www.tobistravels.com</a>
+        <a href="#" class="chip"><i class="fab fa-facebook-f"></i> Tobi's Travels</a>
+        <a href="#" class="chip"><i class="fab fa-viber"></i> Viber / Messenger</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div class="footer-left">
+        <img src="logo.png" alt="Tobi's Travels" class="footer-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='block'" />
+        <div class="footer-logo-fallback">
+          <span class="footer-logo-text">Tobi's <span>Travels</span></span>
+        </div>
+        <p>DOT Accredited · Est. 2011<br/>Travel On Budget Instantly!<br/>Making Filipino travel effortless since day one. 🐻</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="#" aria-label="Viber"><i class="fab fa-viber"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="#tours">Tour Vibes</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#why">Why Tobi's</a>
+        <a href="#book">Book Now</a>
+      </div>
+      <div class="footer-links">
+        <h4>Destinations</h4>
+        <a href="#book">Palawan</a>
+        <a href="#book">Siargao</a>
+        <a href="#book">Boracay</a>
+        <a href="#book">Batanes</a>
+        <a href="#book">Cebu</a>
+      </div>
+      <div class="footer-contact">
+        <h4>Say Hi! 🐻</h4>
+        <p><i class="fas fa-phone"></i> +63 917 309 0783</p>
+        <p><i class="fas fa-phone"></i> +63 998 594 0643</p>
+        <p><i class="fas fa-envelope"></i> tobi.travelandtours@gmail.com</p>
+        <p><i class="fas fa-globe"></i> www.tobistravels.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Unit 100 GF Park Place Centre Bldg., Marcos Highway, Brgy. Mayamot, Antipolo City, Rizal 1870</p>
+        <div class="dot-badge">
+          <i class="fas fa-certificate"></i> DOT · RTAA · PATA · TPB
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Tobi's Travels. All rights reserved. · DOT Accredited · Travel On Budget Instantly! 🐻</p>
+    </div>
+  </footer>
+
+  <!-- Floating CTA -->
+  <a href="#book" class="float-cta" id="floatCta">🐻 Book a trip →</a>
+
+  <script src="script.js"></script>
+</body>
+</html>

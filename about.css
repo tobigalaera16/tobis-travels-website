@@ -349,3 +349,12 @@
   .doc-card { flex-direction: column; }
   .partners-grid { grid-template-columns: 1fr; }
 }
+
+/* Doc seal with real logo image */
+.doc-seal-img { background: #fff !important; border: 2px solid #e8f0fe !important; padding: 4px; }
+.doc-org-logo { width: 100%; height: 100%; object-fit: contain; border-radius: 50%; }
+.doc-philtoa .doc-seal { background: #fff; border: 2px solid rgba(0,0,180,.15); }
+
+/* Partner logo image */
+.partner-logo-wrap { margin-bottom: 12px; }
+.partner-logo-img { height: 70px; width: auto; max-width: 160px; object-fit: contain; }

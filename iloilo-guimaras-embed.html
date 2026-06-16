@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Go Iloilo-Guimaras Tour Package — Tobi's Travels</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'DM Sans', Arial, sans-serif; background: #fff8f2; color: #0d2b6b; line-height: 1.6; }
+
+  .tg-wrap { max-width: 1100px; margin: 0 auto; padding: 40px 20px; }
+
+  .tg-tag {
+    display: inline-block;
+    background: rgba(255,107,53,.12);
+    color: #ff6b35;
+    border: 1px solid rgba(255,107,53,.35);
+    padding: 5px 16px; border-radius: 50px;
+    font-size: .75rem; font-weight: 700;
+    letter-spacing: .06em; text-transform: uppercase; margin-bottom: 14px;
+  }
+  .tg-head { text-align: center; margin-bottom: 32px; }
+  .tg-head h2 {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
+    font-weight: 800; letter-spacing: -.02em;
+    color: #0d2b6b; margin-bottom: 8px;
+  }
+  .tg-head h2 em { color: #00a896; font-style: italic; }
+  .tg-head p { color: #6b8ab0; font-size: .95rem; }
+
+  .tg-card {
+    display: grid; grid-template-columns: 1fr 1.1fr;
+    background: #fff; border-radius: 16px; overflow: hidden;
+    border: 2px solid #e8f0fe; box-shadow: 0 8px 32px rgba(13,43,107,.1);
+  }
+  .tg-poster { position: relative; background: #f0f0f0; min-height: 100%; }
+  .tg-poster img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+  .tg-details { padding: 32px 28px; display: flex; flex-direction: column; }
+
+  .tg-price-box {
+    display: inline-flex; align-items: baseline; gap: 8px;
+    background: linear-gradient(135deg, #ff6b35 0%, #ff9b39 100%);
+    color: #fff; padding: 10px 20px; border-radius: 50px;
+    width: fit-content; margin-bottom: 20px;
+  }
+  .tg-price-label { font-size: .76rem; font-weight: 600; opacity: .9; }
+  .tg-price { font-family: 'Syne', sans-serif; font-size: 1.35rem; font-weight: 800; }
+  .tg-price small { font-size: .68rem; font-weight: 500; opacity: .85; }
+
+  .tg-details h3 {
+    font-family: 'Syne', sans-serif; font-size: 1.1rem; font-weight: 700;
+    color: #0d2b6b; margin-bottom: 14px;
+  }
+
+  .tg-days { display: flex; flex-direction: column; gap: 10px; margin-bottom: 22px; }
+  .tg-day { display: flex; gap: 12px; font-size: .84rem; }
+  .tg-day strong { color: #007a70; flex-shrink: 0; min-width: 48px; }
+  .tg-day span { color: #4a6080; }
+
+  .tg-incl-excl { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 26px; }
+  .tg-col h4 { font-family: 'Syne', sans-serif; font-size: .88rem; font-weight: 700; color: #0d2b6b; margin-bottom: 10px; }
+  .tg-col ul { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+  .tg-col ul li { font-size: .78rem; color: #4a6080; padding-left: 14px; position: relative; line-height: 1.4; }
+  .tg-col ul li::before { content: '·'; position: absolute; left: 0; color: #ff6b35; font-weight: 700; }
+
+  .tg-book-btn {
+    margin-top: auto; display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    background: #ffd700; color: #0d2b6b;
+    padding: 16px; border-radius: 10px;
+    font-weight: 700; font-size: 1.05rem;
+    text-decoration: none; border: 2px solid #ffd700;
+    transition: all .25s ease; cursor: pointer;
+  }
+  .tg-book-btn:hover { background: #e6c200; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(255,215,0,.4); }
+
+  .tg-contact {
+    display: flex; flex-wrap: wrap; gap: 14px; justify-content: center;
+    margin-top: 24px; font-size: .82rem; color: #4a6080;
+  }
+  .tg-contact a { color: #0d2b6b; text-decoration: none; font-weight: 600; }
+  .tg-contact a:hover { color: #ff6b35; }
+
+  @media (max-width: 860px) {
+    .tg-card { grid-template-columns: 1fr; }
+    .tg-poster { min-height: 320px; }
+    .tg-incl-excl { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="tg-wrap">
+
+  <div class="tg-head">
+    <span class="tg-tag">🔥 Featured Promo · 2026–2027 Departures</span>
+    <h2>Go Iloilo-Guimaras <em>Tour Package</em></h2>
+    <p>4D3N · For as low as ₱15,888/pax · Multiple departure dates available</p>
+  </div>
+
+  <div class="tg-card">
+    <div class="tg-poster">
+      <img src="iloilo-guimaras-poster.png" alt="Iloilo-Guimaras Tour Package 2026-2027" />
+    </div>
+
+    <div class="tg-details">
+      <div class="tg-price-box">
+        <span class="tg-price-label">For as low as</span>
+        <span class="tg-price">₱15,888 <small>/ pax</small></span>
+      </div>
+
+      <h3>4 Days · 3 Nights Itinerary</h3>
+      <div class="tg-days">
+        <div class="tg-day">
+          <strong>Day 1</strong>
+          <span>San Lorenzo Wind Farm, Guimaras Landmark, Trappist Monastery — check-in at resort</span>
+        </div>
+        <div class="tg-day">
+          <strong>Day 2</strong>
+          <span>Island Hopping: Natago Beach Resort, La Murawan, Baras Cave & Ave Maria Islet</span>
+        </div>
+        <div class="tg-day">
+          <strong>Day 3</strong>
+          <span>Free time at resort, checkout, transfer to Iloilo City hotel</span>
+        </div>
+        <div class="tg-day">
+          <strong>Day 4</strong>
+          <span>Garin Farm, Miag-ao & Molo Churches, Calle Real heritage walk, airport departure</span>
+        </div>
+      </div>
+
+      <div class="tg-incl-excl">
+        <div class="tg-col">
+          <h4>✅ Inclusions</h4>
+          <ul>
+            <li>Roundtrip airfare w/ 7kg hand carry</li>
+            <li>2 nights hotel in Guimaras (beach resort)</li>
+            <li>1 night hotel in Iloilo City</li>
+            <li>Tourist van & roundtrip airport transfers</li>
+            <li>Licensed tour guide</li>
+            <li>Roundtrip pumpboat (Iloilo–Guimaras–Iloilo)</li>
+            <li>3 Breakfast, 2 Lunch, 2 Dinner</li>
+            <li>Sweet Guimaras mango treat</li>
+            <li>Fully loaded tours w/ entrance fees</li>
+            <li>All taxes and fees</li>
+          </ul>
+        </div>
+        <div class="tg-col">
+          <h4>❌ Exclusions</h4>
+          <ul>
+            <li>Check-in baggage</li>
+            <li>Travel insurance</li>
+          </ul>
+          <h4 style="margin-top:18px">📅 Sample Departures</h4>
+          <ul>
+            <li>Jul 22–25, 2026</li>
+            <li>Aug 20–23, 2026</li>
+            <li>Sep 10–13, 2026</li>
+            <li>Mar 24–27, 2027</li>
+            <li>Apr 21–24, 2027</li>
+            <li>May 5–8, 2027</li>
+          </ul>
+        </div>
+      </div>
+
+      <a href="https://wa.me/639173090783?text=Hi%20Tobi's%20Travels!%20I'm%20interested%20in%20the%20Iloilo-Guimaras%20Tour%20Package." target="_blank" class="tg-book-btn">🐻 Book Now →</a>
+
+      <div class="tg-contact">
+        <a href="tel:+639173090783">📞 +63 917 309 0783</a>
+        <a href="tel:+639985940643">📞 +63 998 594 0643</a>
+        <a href="mailto:sales.tobis3@gmail.com">✉️ sales.tobis3@gmail.com</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

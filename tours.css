@@ -248,3 +248,49 @@
 @media (max-width: 400px) {
   .mini-grid { grid-template-columns: 1fr 1fr; }
 }
+
+/* ===== FEATURED PROMO: ILOILO-GUIMARAS ===== */
+.promo-feature { padding: 80px 0 40px; background: var(--sand); }
+.promo-feature .tag.hot { background: rgba(255,107,53,.12); color: var(--coral); border-color: rgba(255,107,53,.35); }
+
+.promo-card {
+  display: grid; grid-template-columns: 1fr 1.1fr; gap: 0;
+  background: #fff; border-radius: var(--radius); overflow: hidden;
+  border: 2px solid #e8f0fe; box-shadow: 0 8px 32px rgba(13,43,107,.1);
+}
+.promo-poster { position: relative; min-height: 100%; background: #f0f0f0; }
+.promo-poster img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+.promo-details { padding: 36px 32px; display: flex; flex-direction: column; }
+.promo-price-box {
+  display: inline-flex; align-items: baseline; gap: 8px;
+  background: linear-gradient(135deg, var(--coral) 0%, var(--orange) 100%);
+  color: #fff; padding: 10px 20px; border-radius: 50px;
+  width: fit-content; margin-bottom: 20px;
+}
+.promo-price-label { font-size: .78rem; font-weight: 600; opacity: .9; }
+.promo-price { font-family: 'Syne', sans-serif; font-size: 1.4rem; font-weight: 800; }
+.promo-price small { font-size: .7rem; font-weight: 500; opacity: .85; }
+
+.promo-details h3 { font-family: 'Syne', sans-serif; font-size: 1.15rem; font-weight: 700; color: var(--navy); margin-bottom: 14px; }
+
+.promo-days { display: flex; flex-direction: column; gap: 10px; margin-bottom: 24px; }
+.promo-day { display: flex; gap: 12px; font-size: .85rem; line-height: 1.5; }
+.promo-day strong { color: var(--teal-dark); flex-shrink: 0; min-width: 50px; }
+.promo-day span { color: #4a6080; }
+
+.promo-incl-excl { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 28px; }
+.promo-col h4 { font-family: 'Syne', sans-serif; font-size: .9rem; font-weight: 700; color: var(--navy); margin-bottom: 10px; }
+.promo-col ul { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.promo-col ul li { font-size: .8rem; color: #4a6080; padding-left: 14px; position: relative; line-height: 1.4; }
+.promo-col ul li::before { content: '·'; position: absolute; left: 0; color: var(--coral); font-weight: 700; }
+.promo-dates li::before { content: '📅'; font-size: .7rem; left: -2px; }
+.promo-dates li { padding-left: 18px; }
+
+.promo-book-btn { margin-top: auto; font-size: 1.05rem; padding: 16px; }
+
+@media (max-width: 900px) {
+  .promo-card { grid-template-columns: 1fr; }
+  .promo-poster { min-height: 320px; }
+  .promo-incl-excl { grid-template-columns: 1fr; }
+}
